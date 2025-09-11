@@ -1,0 +1,23 @@
+# Ignore all files with a .log extension
+*.logs
+
+# Ignore the 'build' directory
+/build/
+
+# Ignore the .env file
+*.env
+.env
+# Ignore a specific file named 'config.local.js'
+config.local.js
+
+# Ignore all files in the 'temp' directory, but not the directory itself
+temp/*
+
+# Ignore the 'node_modules' directory
+node_modules/
+
+# Ignore macOS-specific files
+.DS_Store
+
+# Ignore editor-specific files (e.g., from VS Code)
+.vscode/
