@@ -7,6 +7,8 @@ import session from "express-session";
 import "./config/passport.js";
 
 import authRoutes from "./routes/authRoutes.js";
+import propertyRoutes from "./routes/propertyRoutes.js";
+import bookingRoutes from "./routes/bookingRoutes.js";
 import corsMiddleware from "./utils/cors.js";
 import logger from "./utils/logger.js";
 
@@ -31,6 +33,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use("/api/auth", authRoutes);
+app.use("/api/porperty", propertyRoutes);
+app.use("/api/booking", bookingRoutes);
 
 app.use((req, res, next) => {
   logger.info(`${req.method} ${req.url}`);
