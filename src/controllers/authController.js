@@ -9,17 +9,17 @@ const sendToken = (user, res) => {
   res.cookie("token", token, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
-    sameSite: "strict",
+    sameSite: process.env.NODE_ENV === "production" ? "strict" : "lax",
     maxAge: 7 * 24 * 60 * 60 * 1000,
   });
 
-  res.json({
+  return {
     _id: user._id,
     name: user.name,
     email: user.email,
     avatar: user.avatar,
     role: user.role,
-  });
+  };
 };
 
 export const register = async (req, res) => {
@@ -29,7 +29,8 @@ export const register = async (req, res) => {
     if (exists) return res.status(400).json({ message: "User already exists" });
 
     const user = await User.create({ name, email, password });
-    sendToken(user, res);
+    const userData = sendToken(user, res);
+    res.json(userData);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
@@ -42,16 +43,42 @@ export const login = async (req, res) => {
     if (!user || !(await user.matchPassword(password))) {
       return res.status(401).json({ message: "Invalid credentials" });
     }
-    sendToken(user, res);
+    const userData = sendToken(user, res);
+    res.json(userData);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
 };
 
 export const googleAuth = async (req, res) => {
-  if (!req.user)
-    return res.status(400).json({ message: "Google login failed" });
-  sendToken(req.user, res);
+  if (!req.user) {
+    return res.redirect(
+      `${process.env.CLIENT_URL}/login?error=google_auth_failed`
+    );
+  }
+
+  const token = jwt.sign({ id: req.user._id }, process.env.JWT_SECRET, {
+    expiresIn: "7d",
+  });
+
+  res.cookie("token", token, {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: process.env.NODE_ENV === "production" ? "strict" : "lax",
+    maxAge: 7 * 24 * 60 * 60 * 1000,
+  });
+
+  res.redirect(
+    `${process.env.CLIENT_URL}/auth-success?user=${encodeURIComponent(
+      JSON.stringify({
+        _id: req.user._id,
+        name: req.user.name,
+        email: req.user.email,
+        avatar: req.user.avatar,
+        role: req.user.role,
+      })
+    )}`
+  );
 };
 
 export const logout = (req, res) => {
@@ -69,6 +96,18 @@ export const updateProfile = async (req, res) => {
     await user.save();
 
     res.json({ message: "Profile updated", user });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+export const getCurrentUser = async (req, res) => {
+  try {
+    const user = await User.findById(req.user._id).select("-password");
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    res.json(user);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }

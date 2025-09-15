@@ -6,6 +6,7 @@ import {
   logout,
   googleAuth,
   updateProfile,
+  getCurrentUser,
 } from "../controllers/authController.js";
 import { protect } from "../middlewares/authMiddleware.js";
 
@@ -14,6 +15,7 @@ const router = express.Router();
 router.post("/register", register);
 router.post("/login", login);
 router.post("/logout", logout);
+router.get("/me", protect, getCurrentUser);
 
 router.get(
   "/google",
@@ -22,7 +24,9 @@ router.get(
 
 router.get(
   "/google/callback",
-  passport.authenticate("google", { failureRedirect: "/login" }),
+  passport.authenticate("google", {
+    failureRedirect: `${process.env.CLIENT_URL}/login?error=google_auth_failed`,
+  }),
   googleAuth
 );
 

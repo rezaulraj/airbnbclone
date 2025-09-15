@@ -1,0 +1,66 @@
+2025-09-15 23:48:38 [[31merror[39m]: Error: secret option required for sessions
+    at session (D:\Personal Project\airbnbclone\node_modules\express-session\index.js:204:12)
+    at Layer.handleRequest (D:\Personal Project\airbnbclone\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Personal Project\airbnbclone\node_modules\router\index.js:342:13)
+    at D:\Personal Project\airbnbclone\node_modules\router\index.js:297:9
+    at processParams (D:\Personal Project\airbnbclone\node_modules\router\index.js:582:12)
+    at next (D:\Personal Project\airbnbclone\node_modules\router\index.js:291:5)
+    at cors (D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:188:7)
+    at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:224:17
+    at originCallback (D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:214:15)
+    at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:219:13
+2025-09-15 23:48:38 [[31merror[39m]: Error: secret option required for sessions
+    at session (D:\Personal Project\airbnbclone\node_modules\express-session\index.js:204:12)
+    at Layer.handleRequest (D:\Personal Project\airbnbclone\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Personal Project\airbnbclone\node_modules\router\index.js:342:13)
+    at D:\Personal Project\airbnbclone\node_modules\router\index.js:297:9
+    at processParams (D:\Personal Project\airbnbclone\node_modules\router\index.js:582:12)
+    at next (D:\Personal Project\airbnbclone\node_modules\router\index.js:291:5)
+    at cors (D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:188:7)
+    at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:224:17
+    at originCallback (D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:214:15)
+    at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:219:13
+2025-09-15 23:48:43 [[31merror[39m]: Error: secret option required for sessions
+    at session (D:\Personal Project\airbnbclone\node_modules\express-session\index.js:204:12)
+    at Layer.handleRequest (D:\Personal Project\airbnbclone\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Personal Project\airbnbclone\node_modules\router\index.js:342:13)
+    at D:\Personal Project\airbnbclone\node_modules\router\index.js:297:9
+    at processParams (D:\Personal Project\airbnbclone\node_modules\router\index.js:582:12)
+    at next (D:\Personal Project\airbnbclone\node_modules\router\index.js:291:5)
+    at cors (D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:188:7)
+    at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:224:17
+    at originCallback (D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:214:15)
+    at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:219:13
+2025-09-15 23:48:55 [[31merror[39m]: Error: secret option required for sessions
+    at session (D:\Personal Project\airbnbclone\node_modules\express-session\index.js:204:12)
+    at Layer.handleRequest (D:\Personal Project\airbnbclone\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Personal Project\airbnbclone\node_modules\router\index.js:342:13)
+    at D:\Personal Project\airbnbclone\node_modules\router\index.js:297:9
+    at processParams (D:\Personal Project\airbnbclone\node_modules\router\index.js:582:12)
+    at next (D:\Personal Project\airbnbclone\node_modules\router\index.js:291:5)
+    at cors (D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:188:7)
+    at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:224:17
+    at originCallback (D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:214:15)
+    at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:219:13
+2025-09-15 23:48:55 [[31merror[39m]: Error: secret option required for sessions
+    at session (D:\Personal Project\airbnbclone\node_modules\express-session\index.js:204:12)
+    at Layer.handleRequest (D:\Personal Project\airbnbclone\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Personal Project\airbnbclone\node_modules\router\index.js:342:13)
+    at D:\Personal Project\airbnbclone\node_modules\router\index.js:297:9
+    at processParams (D:\Personal Project\airbnbclone\node_modules\router\index.js:582:12)
+    at next (D:\Personal Project\airbnbclone\node_modules\router\index.js:291:5)
+    at cors (D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:188:7)
+    at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:224:17
+    at originCallback (D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:214:15)
+    at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:219:13
+2025-09-15 23:48:55 [[31merror[39m]: Error: secret option required for sessions
+    at session (D:\Personal Project\airbnbclone\node_modules\express-session\index.js:204:12)
+    at Layer.handleRequest (D:\Personal Project\airbnbclone\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (D:\Personal Project\airbnbclone\node_modules\router\index.js:342:13)
+    at D:\Personal Project\airbnbclone\node_modules\router\index.js:297:9
+    at processParams (D:\Personal Project\airbnbclone\node_modules\router\index.js:582:12)
+    at next (D:\Personal Project\airbnbclone\node_modules\router\index.js:291:5)
+    at cors (D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:188:7)
+    at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:224:17
+    at originCallback (D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:214:15)
+    at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:219:13
