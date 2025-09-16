@@ -33,7 +33,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use("/api/auth", authRoutes);
-app.use("/api/porperty", propertyRoutes);
+app.use("/api/properties", propertyRoutes);
 app.use("/api/booking", bookingRoutes);
 
 app.use((req, res, next) => {

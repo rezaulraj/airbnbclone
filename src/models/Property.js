@@ -2,28 +2,21 @@ import mongoose from "mongoose";
 
 const propertySchema = new mongoose.Schema(
   {
-    title: {
-      type: Map,
-      of: String, // { en: "Nice Apartment", es: "Bonito Apartamento" }
-      required: true,
-    },
-    description: {
-      type: Map,
-      of: String,
-    },
+    title: { type: String, required: true },
+    description: { type: String },
     pricePerNight: { type: Number, required: true },
     address: {
-      street: { type: Map, of: String },
-      city: { type: Map, of: String },
-      state: { type: Map, of: String },
-      country: { type: Map, of: String },
+      street: String,
+      city: String,
+      state: String,
+      country: String,
       zipCode: String,
     },
     location: {
       type: { type: String, enum: ["Point"], default: "Point" },
       coordinates: { type: [Number], required: true },
     },
-    amenities: [{ type: Map, of: String }],
+    amenities: [{ type: String }],
     images: [{ type: String }],
     maxGuests: { type: Number, required: true },
     bedrooms: { type: Number, default: 1 },
