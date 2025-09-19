@@ -9,7 +9,7 @@ import "./src/config/passport.js";
 import authRoutes from "./src/routes/authRoutes.js";
 import propertyRoutes from "./src/routes/propertyRoutes.js";
 import bookingRoutes from "./src/routes/bookingRoutes.js";
-import corsMiddleware from "./src/utils/cors.js";
+import cors from "./src/utils/cors.js";
 import logger from "./src/utils/logger.js";
 
 dotenv.config();
@@ -19,7 +19,7 @@ const app = express();
 // middlewares
 app.use(express.json());
 app.use(cookieParser());
-app.use(corsMiddleware);
+app.use(cors);
 
 app.use(
   session({
