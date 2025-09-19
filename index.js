@@ -16,7 +16,7 @@ dotenv.config();
 connectDB();
 
 const app = express();
-
+// middlewares
 app.use(express.json());
 app.use(cookieParser());
 app.use(corsMiddleware);
