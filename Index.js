@@ -1,16 +1,16 @@
 import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
-import connectDB from "./config/db.js";
+import connectDB from "./src/config/db.js";
 import passport from "passport";
 import session from "express-session";
-import "./config/passport.js";
+import "./src/config/passport.js";
 
-import authRoutes from "./routes/authRoutes.js";
-import propertyRoutes from "./routes/propertyRoutes.js";
-import bookingRoutes from "./routes/bookingRoutes.js";
-import corsMiddleware from "./utils/cors.js";
-import logger from "./utils/logger.js";
+import authRoutes from "./src/routes/authRoutes.js";
+import propertyRoutes from "./src/routes/propertyRoutes.js";
+import bookingRoutes from "./src/routes/bookingRoutes.js";
+import corsMiddleware from "./src/utils/cors.js";
+import logger from "./src/utils/logger.js";
 
 dotenv.config();
 connectDB();
