@@ -12,7 +12,7 @@ const paymentSchema = new mongoose.Schema(
     currency: { type: String, default: "USD" },
     status: {
       type: String,
-      enum: ["pending", "completed", "failed"],
+      enum: ["pending", "registed", "completed", "failed"],
       default: "pending",
     },
     transactionId: { type: String },
