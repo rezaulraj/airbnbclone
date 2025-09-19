@@ -64,3 +64,21 @@
     at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:224:17
     at originCallback (D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:214:15)
     at D:\Personal Project\airbnbclone\node_modules\cors\lib\index.js:219:13
+2025-09-19 22:35:54 [[31merror[39m]: MongoServerError: E11000 duplicate key error collection: airbnbclone.users index: email_1 dup key: { email: "rezaul.coderhunt@gmail.com" }
+    at InsertOneOperation.execute (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\collection.js:157:16)
+2025-09-19 22:39:14 [[31merror[39m]: MongoServerError: E11000 duplicate key error collection: airbnbclone.users index: email_1 dup key: { email: "rezaul.coderhunt@gmail.com" }
+    at InsertOneOperation.execute (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\collection.js:157:16)
+2025-09-19 22:39:45 [[31merror[39m]: MongoServerError: E11000 duplicate key error collection: airbnbclone.users index: email_1 dup key: { email: "rezaul.coderhunt@gmail.com" }
+    at InsertOneOperation.execute (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\collection.js:157:16)

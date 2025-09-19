@@ -145,3 +145,59 @@
 2025-09-16 23:54:30 [[32minfo[39m]: Server running on port 8080
 2025-09-16 23:54:47 [[32minfo[39m]: Server running on port 8080
 2025-09-16 23:54:51 [[32minfo[39m]: Server running on port 8080
+2025-09-16 23:54:57 [[32minfo[39m]: Server running on port 8080
+2025-09-18 12:30:51 [[32minfo[39m]: Server running on port 8080
+2025-09-18 12:38:47 [[32minfo[39m]: Server running on port 8080
+2025-09-19 22:34:54 [[32minfo[39m]: Server running on port 8080
+2025-09-19 22:35:54 [[31merror[39m]: MongoServerError: E11000 duplicate key error collection: airbnbclone.users index: email_1 dup key: { email: "rezaul.coderhunt@gmail.com" }
+    at InsertOneOperation.execute (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\collection.js:157:16)
+2025-09-19 22:35:55 [[32minfo[39m]: GET /favicon.ico
+2025-09-19 22:39:14 [[31merror[39m]: MongoServerError: E11000 duplicate key error collection: airbnbclone.users index: email_1 dup key: { email: "rezaul.coderhunt@gmail.com" }
+    at InsertOneOperation.execute (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\collection.js:157:16)
+2025-09-19 22:39:32 [[32minfo[39m]: GET /.well-known/appspecific/com.chrome.devtools.json
+2025-09-19 22:39:45 [[31merror[39m]: MongoServerError: E11000 duplicate key error collection: airbnbclone.users index: email_1 dup key: { email: "rezaul.coderhunt@gmail.com" }
+    at InsertOneOperation.execute (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\Personal Project\airbnbclone\node_modules\mongodb\lib\collection.js:157:16)
+2025-09-19 22:39:46 [[32minfo[39m]: GET /.well-known/appspecific/com.chrome.devtools.json
+2025-09-19 22:48:57 [[32minfo[39m]: Server running on port 8080
+2025-09-19 22:49:00 [[32minfo[39m]: Server running on port 8080
+2025-09-19 22:50:19 [[32minfo[39m]: Server running on port 8080
+2025-09-19 22:50:28 [[32minfo[39m]: Server running on port 8080
+2025-09-19 22:50:51 [[32minfo[39m]: Server running on port 8080
+2025-09-19 22:59:44 [[32minfo[39m]: Server running on port 8080
+2025-09-19 22:59:48 [[32minfo[39m]: Server running on port 8080
+2025-09-19 23:29:49 [[32minfo[39m]: Server running on port 8080
+2025-09-19 23:29:52 [[32minfo[39m]: Server running on port 8080
+2025-09-19 23:30:50 [[32minfo[39m]: Server running on port 8080
+2025-09-19 23:30:55 [[32minfo[39m]: Server running on port 8080
+2025-09-19 23:30:59 [[32minfo[39m]: Server running on port 8080
+2025-09-19 23:31:02 [[32minfo[39m]: Server running on port 8080
+2025-09-19 23:31:09 [[32minfo[39m]: Server running on port 8080
+2025-09-19 23:53:03 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:00:53 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:01:02 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:01:06 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:01:09 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:01:41 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:01:44 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:01:46 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:01:54 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:01:58 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:02:05 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:02:12 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:08:29 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:08:38 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:08:43 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:11:21 [[32minfo[39m]: Server running on port 8080
+2025-09-20 00:11:47 [[32minfo[39m]: Server running on port 8080
